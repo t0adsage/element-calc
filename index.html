@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Стиль калькулятора -->
+    <link rel="stylesheet" href="./tscalc/tscalc.css">
+    
+    <title>TS Calc</title>
+</head>
+
+<body>
+    <!-- Калькулятор -->
+    <div class="tscontainer">
+        <p class="main__tsctext tsctext ts-20">
+            Воспользуйтесь экспресс калькулятором чтобы узнать состояние организма и рассчитать необходимый курс
+            препарата <span class="tsctext__bold tsctext__blue-light tsctext__upper">Product_name</span>.
+        </p>
+
+        <div class="main__tstest tstest ts-20 tscalc-form">
+            <div class="tstest__form">
+                <p class="tstest__form-title">Выберите пол:</p>
+                <select name="gender">
+                    <option value="Женщина">Женский</option>
+                    <option value="Мужчина">Мужской</option>
+                </select>
+                <input type="tsctext" class="inp1" placeholder="Ваш возраст" name="age">
+                <input type="tsctext" class="inp2" placeholder="Ваш рост" name="height">
+                <input type="tsctext" class="inp3" placeholder="Ваш вес" name="weight">
+            </div>
+            <div class="tstest__result">
+                <p class="tstest__result-title line1" style="visibility: hidden;">У вас крайняя стадия ожирения
+                </p>
+                <p class="tstest__result-warning line2" style="visibility: hidden;">Срочно пройдите расширенный
+                    курс Product_name (от 10 до 14
+                    недель), а также добавьте физические нагрузки. За это время можно сбросить от 25 кг до 40
+                    кг.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Калькулятор -->
+
+    <!-- Скрипт калькулятора -->
+    <script src="tscalc/tscalc.js"></script>
+</body>
+
+</html>
